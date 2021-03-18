@@ -54,6 +54,11 @@ img{
     margin-left: 0%;
     }
 
+    .navele{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .coverr{
     justify-items: center;
     }
@@ -64,12 +69,13 @@ img{
     }
 
     a{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .about-content{
         margin-top: 15%;
         margin-left: 20px;
-        font-size: 20px;
+        font-size: 18px;
+        width: 270px;
     }
 }

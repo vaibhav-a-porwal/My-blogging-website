@@ -44,4 +44,13 @@ a{
         font-size: 15px;
     }
 
+    .navele{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .poem-images{
+        margin-left: 0;
+    }
+
 }

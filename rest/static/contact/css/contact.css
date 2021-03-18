@@ -54,15 +54,20 @@ a:hover{
     margin-left: 0%;
     }
 
+    .navele{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .img{
         display: none;
     }
 
     a{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     h4{
-        font-size: 20px;
+        font-size: 28px;
     }
 }
