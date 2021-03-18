@@ -40,12 +40,8 @@ a{
 
 @media (max-width: 750px){
 
-    .poem-images{
-        margin-left: 10px;
-    }
-
     a{
-        font-size: 10px;
+        font-size: 15px;
     }
 
 }
