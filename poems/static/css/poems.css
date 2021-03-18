@@ -53,4 +53,8 @@ a{
         margin-left: 0;
     }
 
+    .d-flex{
+        margin-left: 0;
+        padding-left: 0;
+    }
 }
