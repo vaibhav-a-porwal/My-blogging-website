@@ -63,11 +63,15 @@ img{
         height: 250px;
     }
 
+    a{
+        font-size: 10px;
+    }
+
     .about-content{
         margin-top: 15%;
-        margin-left: 0;
+        margin-left: 20px;
         font-size: 20px;
         padding-left: 30px;
-        padding-right: 30px;
+        padding-right: 10px;
     }
 }
