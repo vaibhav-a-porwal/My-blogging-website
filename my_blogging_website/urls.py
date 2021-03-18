@@ -19,9 +19,9 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('blogs/', include('blogs.urls'), name="blogs"),
+    path('', include('blogs.urls'), name="blogs"),
     path('poems/', include('poems.urls'), name="poems"),
-    path('', include('rest.urls'), name="rest"),
+    path('me/', include('rest.urls'), name="rest"),
     path('admin/', admin.site.urls),
 ]
 
