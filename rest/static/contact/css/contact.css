@@ -1,0 +1,60 @@
+*{
+    font-family: BodoniXT;
+    color: black;
+}
+
+::selection{
+    background-color: #E3CA99;
+}
+
+a{
+    font-size: 20px;
+}
+
+.navele:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.nav{
+    /* margin-left: 15%; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 0;
+}
+
+.navele{
+    color: black;
+    padding: 15px;
+    margin-left: 6px;
+}
+
+h4{
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.img{
+    transform: rotate(-10deg);
+}
+
+@media (max-width: 750px){
+    .nav{
+    margin-left: 0%;
+    }
+
+    .img{
+        display: none;
+    }
+}

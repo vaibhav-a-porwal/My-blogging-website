@@ -1,0 +1,98 @@
+::selection{
+    background-color: #E3CA99;
+}
+
+a{
+    font-size: 20px;
+}
+
+.navele:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.coverr{
+    display: flex;
+    z-index: -3;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.nav{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 50px;
+    font-family: BodoniXT;
+}
+
+.navele{
+    color: black;
+    padding: 15px;
+    margin-left: 6px;
+}
+
+.aka{
+    z-index: -2;
+    margin-top: 70px;
+}
+
+.title{
+    color: black;
+    font-family: Century;
+}
+
+.title:hover{
+    color: #3A3B3C;
+    text-decoration: none;
+}
+
+.description{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-family: Century;
+}
+
+p{
+    font-family: Century;
+}
+
+.img{
+    height: 270px;
+    float: right;
+}
+
+.blog-img{
+    margin-top: 8%;
+    height: 150px;
+}
+
+@media (max-width: 1100px){
+    .img{
+        display: none !important;
+    }
+}
+
+@media (max-width: 750px){
+    .nav{
+    margin-left: 0%;
+    }
+
+    .description{
+        display: none;
+    }
+
+    .coverr{
+        vertical-align: middle;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .blog-img{
+        height: 250px;
+        margin-top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,14 @@
+*{
+    font-family: Century;
+    letter-spacing: 1.3px;
+}
+
+::selection{
+    background-color: #E3CA99;
+}
+
+h4{
+    line-height: 1.7;
+    font-size: 20px;
+    padding-bottom: 150px;
+}

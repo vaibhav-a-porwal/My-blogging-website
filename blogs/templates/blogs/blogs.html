@@ -1,0 +1,41 @@
+{% load static %}   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css\blogs.css' %}">
+    <title>Blogs.</title>
+</head>
+<body>
+    <nav class="nav text-center">
+        <a class="navele" href="{% url 'blogs' %}"><u>Blogs</u></a>
+        <a class="navele" href="{% url 'poems' %}">Poems</a>
+        <a class="navele" href="{% url 'about' %}">About me</a>
+        <a class="navele" href="{% url 'contact' %}">Contact me</a>
+    </nav>
+
+    <img class="img" src="{% static 'images\topright.png' %}">
+    <div class="container">
+    
+        <p class="aka"> *aka short stories </p>
+
+        {% for blog in blogs %}
+        <div class="coverr">
+            <div class="left">
+                <a href="{% url 'detail' blog.id %}"><img src="{{ blog.image.url }}" class="blog-img center"></a>
+            </div>
+
+            <div class="right">
+                <a class="title" href="{% url 'detail' blog.id %}"> <h3> {{ blog.title }} </h3> </a>
+                <p>--{{ blog.date|date:'F jS Y'}}--</p>
+                <h5 class="description">{{ blog.description|truncatechars:150 }}</h5><br>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

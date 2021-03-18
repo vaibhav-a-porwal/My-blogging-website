@@ -1,0 +1,31 @@
+{% load static %}   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css\poems.css' %}">
+    <title>Poems.</title>
+</head>
+<body>
+<div class="nav text-center">
+    <a class="navele" href="{% url 'blogs' %}">Blogs</a>
+    <a class="navele" href="{% url 'poems' %}"><u>Poems</u></a>
+    <a class="navele" href="{% url 'about' %}">About me</a>
+    <a class="navele" href="{% url 'contact' %}">Contact me</a>
+</div>
+
+{% load static %}   
+<div class="d-flex">
+
+{% for poem in poems %}
+    <img class="poem-images" src="{{ poem.image.url }}" style="height: 400px;">
+{% endfor %}
+
+</div>
+
+</body>
+</html>

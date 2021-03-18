@@ -1,0 +1,31 @@
+{% load static %}   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'about\css\about.css' %}">
+    <title>Know me.</title>
+</head>
+<body>
+
+<div class="container">    
+    <div class="nav text-center">
+        <a class="navele" href="{% url 'blogs' %}">Blogs</a>
+        <a class="navele" href="{% url 'poems' %}">Poems</a>
+        <u><a class="navele" href="{% url 'about' %}">About me</a></u>
+        <a class="navele" href="{% url 'contact' %}">Contact me</a>
+    </div>
+
+    <div class="coverr">
+        <img class="img" src="{% static 'about\images\me.png' %}">
+
+        <p class="about-content">Hay I'm <b>Vaibhav Porwal</b>. <br>I'm painting my imaginations onto blank papers in form of english letters. I like to write poems as I find it to be most beautiful form of expressing one's feelings.<br>I also like writing short stories.<br>Hope you will have good time reading me. 😃</p>
+    </div>
+</div>
+
+</body>
+</html>

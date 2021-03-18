@@ -1,0 +1,40 @@
+{% load static %}   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'contact\css\contact.css' %}">
+    <title>Contact me.</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav text-center">
+        <a class="navele" href="{% url 'blogs' %}">Blogs</a>
+        <a class="navele" href="{% url 'poems' %}">Poems</a>
+        <a class="navele" href="{% url 'about' %}">About me</a>
+        <u><a class="navele" href="{% url 'contact' %}">Contact me</a></u>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="left">
+        <h3>Shoot me an E-mail:</h3>
+        <h4 class="text-primary"> <a href="mailto:vaibhav83porwal@gmail.com"> vaibhav83porwal@gmail.com </a> </h4>
+        <br>
+        <h3>Support me on socials:</h3>
+        <h4 class="text-primary"><a href="https://www.instagram.com/__vaibhav__a/">__vaibhav__a</a></h4>
+    </div>
+
+    <div class="right">
+        <img class="img" src="{% static 'contact\images\mail.png' %}">
+    </div>    
+
+</div>
+
+</body>
+</html>
