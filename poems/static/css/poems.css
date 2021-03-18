@@ -54,7 +54,7 @@ a{
     }
 
     .d-flex{
-        margin-left: 0;
+        margin-left: -15px;
         padding-left: 0;
     }
 }
