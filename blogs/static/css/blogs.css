@@ -124,3 +124,15 @@ p{
         font-size: 13px;
     }
 }
+
+@media (max-width: 615px){
+    .coverr{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 785px){
+    .coverr{
+        padding-left: 0;
+    }
+}
