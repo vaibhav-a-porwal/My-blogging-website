@@ -127,7 +127,37 @@ p{
 }
 
 @media (max-width: 980px){
-    .coverr{
-        padding-left: 0;
-    }
+    .nav{
+        margin-left: 0%;
+        }
+    
+        .navele{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        .description{
+            display: none;
+        }
+    
+        .coverr{
+            vertical-align: middle;
+            margin-bottom: 50px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 0%;
+            padding-left: 0;
+        }
+    
+        .blog-img{
+            height: 180px;
+            margin-top: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        a{
+            font-size: 13px;
+        }
 }
