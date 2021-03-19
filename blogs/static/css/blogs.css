@@ -108,6 +108,7 @@ p{
         vertical-align: middle;
         margin-bottom: 50px;
         text-align: center;
+        justify-content: center;
         margin-left: 0%;
         padding-left: 0;
     }
@@ -122,12 +123,6 @@ p{
 
     a{
         font-size: 13px;
-    }
-}
-
-@media (max-width: 615px){
-    .coverr{
-        padding-left: 0;
     }
 }
 
